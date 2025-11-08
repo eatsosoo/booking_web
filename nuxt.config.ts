@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
-  devtools: { enabled: false },
+  compatibilityDate: '2025-11-07',
+  devtools: { enabled: true },
 
   ssr: true,
 
@@ -53,4 +53,11 @@ export default defineNuxtConfig({
   // ui: {
   //   icons: ['heroicons', 'lucide'],
   // },
+  css: ['~/assets/css/main.css'],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 })
